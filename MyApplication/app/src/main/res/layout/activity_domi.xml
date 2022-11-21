@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DomiActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↓ 시장 점유율 ↓"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick9"
+            android:id="@+id/qwe_move"
+            android:text="BTC 도미넌스 확인"/>
+
+        <Button android:id="@+id/asd_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick11"
+            android:layout_gravity="center"
+            android:text="ETH 도미넌스 확인" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↓ 시장 점유율 ↓"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/na_move"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick12"
+            android:text="USDT 도미넌스 확인"/>
+        <Button
+            android:id="@+id/go_move"
+            android:onClick="onClick13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUSD 도미넌스 확인"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="국내 거래소 BTC  \n      바로가기 -->"
+            />
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:id="@+id/up_move"
+            android:onClick="onClick14"
+            android:src="@drawable/upbit"
+
+            android:text="업비트-BTC"/>
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:id="@+id/co_move"
+            android:onClick="onClick15"
+            android:src="@drawable/coinone"
+            android:text="코인원-BTC"/>
+    </LinearLayout>
+</LinearLayout>
